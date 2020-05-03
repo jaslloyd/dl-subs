@@ -3,5 +3,10 @@
     "workspaces": [
         "packages/*"
     ],
-    "scripts": {}
+    "scripts": {
+        "start:web": "yarn workspace @dl-subs/web-app start",
+        "start:api": "cd packages/api/ && python server.py",
+        "install:api": "cd packages/api/ && source venv/Scripts/activate && pip -r requirements.txt",
+        "test:api": "cd packages/api/ && python -m test"
+    }
 }
