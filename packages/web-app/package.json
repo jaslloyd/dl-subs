@@ -1,0 +1,30 @@
+{
+  "name": "@dl-subs/web-app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "2.1.8",
+    "react-stripe-checkout": "^2.6.3",
+    "@testing-library/react": "^8.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && rm -rf ../dl-subs-application-api/app/static2/* && cp -r build/* ../dl-subs-application-api/app/static2/",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "prettier": "^1.12.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
